@@ -3,9 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quantum Faulty Calculator</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div class="app-container">
+        <!-- Main Calculator -->
+        <main class="calculator">
+            <header class="calc-header">
+                <div class="calc-title">
+                    <span class="pulse-dot"></span>
+                    Faulty Calc v1.0
+                </div>
+                <button class="btn-toggle-stats" id="toggleDrawerBtn" title="Show Calculation Diagnostics">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="20" x2="18" y2="10"></line>
+                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                        <line x1="6" y1="20" x2="6" y2="14"></line>
+                    </svg>
+                    Diagnostics
+                </button>
+            </header>
+
+            <!-- Screen Area -->
+            <div class="screen" id="calcScreen">
+                <div class="history-display" id="historyDisplay"></div>
+                <div class="input-display" id="inputDisplay">0</div>
+            </div>
+
+            <!-- Buttons Grid -->
+            <div class="button-grid">
+                <!-- Row 1 -->
+                <button class="calc-btn btn-fn" data-action="clear">AC</button>
+                <button class="calc-btn btn-fn" data-action="delete">DEL</button>
+                <button class="calc-btn btn-fn" data-action="percent">%</button>
+                <button class="calc-btn btn-op" data-val="/">÷</button>
+
+                <!-- Row 2 -->
+                <button class="calc-btn" data-val="7">7</button>
+                <button class="calc-btn" data-val="8">8</button>
+                <button class="calc-btn" data-val="9">9</button>
+                <button class="calc-btn btn-op" data-val="*">×</button>
+
+                <!-- Row 3 -->
+                <button class="calc-btn" data-val="4">4</button>
+                <button class="calc-btn" data-val="5">5</button>
+                <button class="calc-btn" data-val="6">6</button>
+                <button class="calc-btn btn-op" data-val="-">−</button>
+
+                <!-- Row 4 -->
+                <button class="calc-btn" data-val="1">1</button>
+                <button class="calc-btn" data-val="2">2</button>
+                <button class="calc-btn" data-val="3">3</button>
+                <button class="calc-btn btn-op" data-val="+">+</button>
+
+                <!-- Row 5 -->
+                <button class="calc-btn double-width" data-val="0">0</button>
+                <button class="calc-btn" data-val=".">.</button>
+                <button class="calc-btn btn-eq" data-action="calculate">=</button>
+            </div>
+        </main>
+
+        <!-- Diagnostics Drawer -->
+        <aside class="diagnostics-drawer collapsed" id="diagnosticsDrawer">
+            <header class="drawer-header">
+                <h2 class="drawer-title">Diagnostics</h2>
+                <button class="btn-close-drawer" id="closeDrawerBtn" title="Close Drawer">×</button>
+            </header>
+
+            <!-- Stats Overview -->
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-label">Total Runs</div>
+                    <div class="stat-val" id="statTotal">0</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Correct</div>
+                    <div class="stat-val" id="statCorrect">0</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Faulty</div>
+                    <div class="stat-val fault-count" id="statFaulty">0</div>
+                </div>
+            </div>
+
+            <!-- Calculation Log -->
+            <h3 class="history-title">Evaluation Log</h3>
+            <div class="history-list" id="historyList">
+                <div class="empty-history">No calculations run yet</div>
+            </div>
+        </aside>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
