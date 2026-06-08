@@ -1,5 +1,7 @@
 # 🔮 Quantum Faulty Calculator
 
+[![Live Demo](https://img.shields.io/badge/demo-online-brightgreen.svg?style=flat-square)](https://hwsinha.github.io/Faulty-Calculator/)
+
 A premium, interactive web-based calculator featuring a modern **glassmorphic design**, smooth **micro-animations**, complete **keyboard shortcuts**, and a **dynamic diagnostics drawer** that logs evaluations.
 
 As a twist, this calculator is **faulty**: statistically, **10% of calculations** (roughly once in ten inputs) will fail to give the correct answer by swapping mathematical operators.
