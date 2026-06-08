@@ -1,4 +1,4 @@
-# 🔮 Quantum Faulty Calculator
+# Quantum Faulty Calculator
 
 [![Live Demo](https://img.shields.io/badge/demo-online-brightgreen.svg?style=flat-square)](https://hwsinha.github.io/Faulty-Calculator/)
 
