@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Squircle (rounded square) container with transparent exterior -->
+  <rect x="24" y="24" width="464" height="464" rx="120" fill="#11141c" stroke="#6366f1" stroke-width="20" />
+  
+  <!-- Glowing Calculator Screen -->
+  <rect x="112" y="100" width="288" height="90" rx="20" fill="#0d0f14" stroke="#818cf8" stroke-width="12" />
+  
+  <!-- Custom Neon Matrix Lines on the screen to represent the "Faulty" glitch element -->
+  <line x1="136" y1="145" x2="376" y2="145" stroke="#fb7185" stroke-width="6" stroke-linecap="round" opacity="0.8" />
+  
+  <!-- Calculator Keys Grid -->
+  <!-- Row 1: Function/Operation keys -->
+  <circle cx="160" cy="260" r="24" fill="#fb7185" />
+  <circle cx="256" cy="260" r="24" fill="#818cf8" />
+  <circle cx="352" cy="260" r="24" fill="#818cf8" />
+  
+  <!-- Row 2: Digit & Multiplier keys -->
+  <circle cx="160" cy="350" r="24" fill="#ffffff" opacity="0.9" />
+  <circle cx="256" cy="350" r="24" fill="#ffffff" opacity="0.9" />
+  <circle cx="352" cy="350" r="24" fill="#818cf8" />
+  
+  <!-- Row 3: Equals and other digit keys -->
+  <circle cx="160" cy="440" r="24" fill="#ffffff" opacity="0.9" />
+  <rect x="232" y="416" width="144" height="48" rx="24" fill="#6366f1" />
+</svg>
